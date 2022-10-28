@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_one"
+    android:orientation="vertical"
+    tools:context=".ClientFragments.SymptomCheckerSection.SymptomPageOneFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_white_color">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                   android:fontFamily="@font/montserrat"
+                    android:text="@string/wednesday_aug_09_2021"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/upper_Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/box_holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignTop="@+id/profile_image"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/profile_image"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/morning_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat"
+                                android:text="@string/morning_slots"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/morning_slot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat"
+                                android:text="@string/_00_00"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/morning_slot_division"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat"
+                                android:text="@string/mento_park_ca_67678"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/grey" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/afternoon_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat"
+                                android:text="@string/afternoon_slot"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/afternoon_slot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat"
+                                android:text="@string/_00_00"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/afternoon_slot_division"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat"
+                                android:text="@string/mento_park_ca_67678"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/grey" />
+
+
+                        </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/evening_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                         android:fontFamily="@font/montserrat"
+                            android:text="@string/evening_slot"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/evening_slot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                         android:fontFamily="@font/montserrat"
+                            android:text="@string/_00_00"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/evening_slot_division"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                         android:fontFamily="@font/montserrat"
+                            android:text="@string/mento_park_ca_67678"
+                            android:textSize="12sp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/grey" />
+
+                    </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/done"
+                        android:src="@drawable/schedule" />
+
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:contentDescription="@string/done"
+                        android:src="@drawable/ic_delete" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

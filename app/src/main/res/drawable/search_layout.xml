@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Radius of all four corners-->
+    <corners
+
+        android:bottomLeftRadius="50dp"
+        android:topLeftRadius="50dp"
+      />
+
+    <solid android:color="@color/white"/>
+
+    <!--Stroke size and color-->
+    <stroke android:width="2dp"
+        android:color="@color/gray_two" />
+
+
+
+    <!--Fill Color of the Button-->
+    <gradient android:angle="-90"
+        android:startColor="@color/white"
+        android:endColor="@color/white"  />
+
+</shape>

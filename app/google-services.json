@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861409488941",
+    "project_id": "mypockethealth-6546a",
+    "storage_bucket": "mypockethealth-6546a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861409488941:android:f350591187e6b366ea48a4",
+        "android_client_info": {
+          "package_name": "com.medical.mypockethealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861409488941-5b1rtmsh0b0h99nftg5hj8hc90abbqrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxoxKMi638UJYOPqGJ5gFT0FMkxw2hKmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861409488941-5b1rtmsh0b0h99nftg5hj8hc90abbqrf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

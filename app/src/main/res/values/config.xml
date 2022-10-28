@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <bool name="in_app_review_enabled">true</bool>
+    <integer name="in_app_review_delay">10</integer>
+    <integer name="in_app_review_interval">20</integer>
+
+    <bool name="in_app_update_enabled">true</bool>
+    <integer name="in_app_update_interval">5</integer>
+
+
+
+</resources>

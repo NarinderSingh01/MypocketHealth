@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_one"
+    android:orientation="vertical"
+    tools:context=".ClientFragments.SymptomCheckerSection.SymptomPageOneFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/green_one">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/done"
+            android:src="@drawable/ic_left_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/chat"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/done"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/grey"
+            app:civ_border_width="1dp" />
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@+id/bottom_box"
+           android:layout_centerHorizontal="true"
+           android:fillViewport="true">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:orientation="vertical" />
+       </androidx.core.widget.NestedScrollView>
+
+       <RelativeLayout
+           android:id="@+id/bottom_box"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:background="@color/chat_box_outer_color"
+           android:orientation="horizontal">
+
+           <EditText
+               android:id="@+id/editComment"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_alignParentStart="true"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:fontFamily="@font/montserrat"
+               android:layout_marginBottom="10dp"
+               android:layout_toStartOf="@+id/floatingActionButton3"
+               android:autofillHints=""
+               android:background="@drawable/chat_box_layout"
+               android:ems="10"
+               android:hint="@string/write_here"
+               android:inputType="textPersonName"
+               android:paddingStart="15dp"
+               android:paddingEnd="1dp"
+               android:textColorHint="@color/light_white" />
+
+
+           <com.google.android.material.floatingactionbutton.FloatingActionButton
+               android:id="@+id/floatingActionButton3"
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="10dp"
+               android:clickable="true"
+               android:contentDescription="@string/done"
+               android:focusable="true"
+               android:src="@drawable/send"
+               app:backgroundTint="@color/white"
+               app:fabCustomSize="45dp"
+               app:tint="@color/cardview_dark_background" />
+
+       </RelativeLayout>
+
+
+   </RelativeLayout>
+</LinearLayout>

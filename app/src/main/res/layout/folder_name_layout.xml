@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/cross"
+        android:contentDescription="@string/done"
+        app:civ_border_color="@color/grey"
+        app:civ_border_width="1dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/save_ehr_record"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/congrats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/base_black_layout">
+
+            <ImageView
+                android:id="@+id/email_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/description"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:scaleType="fitCenter"
+                app:tint="@color/cardview_dark_background"
+                android:src="@drawable/ic_folder" />
+
+            <EditText
+                android:id="@+id/folder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/app_theme"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:hint="@string/folder_name"
+                app:backgroundTint="@color/white"
+                android:layout_toEndOf="@id/email_image"
+                android:textColorHint="@color/cardview_dark_background"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/email_box"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/outer_button_layout"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
